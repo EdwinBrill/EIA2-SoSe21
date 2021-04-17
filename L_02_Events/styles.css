@@ -1,0 +1,19 @@
+#div0 {
+    position: absolute;
+    left: 180px;
+    background-color: red;
+    height: 150px;
+    width: 150px;
+}
+
+#div1 {
+    position: absolute;
+    left: 10px;
+    background-color : green;
+    height: 150px;
+    width: 150px;
+}
+
+#span {
+    position: fixed;
+}

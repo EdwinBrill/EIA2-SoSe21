@@ -316,3 +316,17 @@ namespace Endabgabe {
     startButton.addEventListener("click", startGame);
 
 }
+
+
+/* Image Resources:
+ https://virtualyoutuber.fandom.com/wiki/A-chan
+ https://virtualyoutuber.fandom.com/wiki/Mori_Calliope
+ https://virtualyoutuber.fandom.com/wiki/Hololive?file=YAGOO_headshot.jpg
+ https://virtualyoutuber.fandom.com/wiki/Oozora_Subaru
+ https://virtualyoutuber.fandom.com/wiki/Shishiro_Botan
+ https://virtualyoutuber.fandom.com/wiki/Shirakami_Fubuki
+ https://virtualyoutuber.fandom.com/wiki/Kureiji_Ollie
+ https://virtualyoutuber.fandom.com/wiki/Shirogane_Noel
+ https://virtualyoutuber.fandom.com/wiki/Amano_Pikamee
+ https://virtualyoutuber.fandom.com/wiki/Ninomae_Ina%27nis
+ https://virtualyoutuber.fandom.com/wiki/Gawr_Gura */

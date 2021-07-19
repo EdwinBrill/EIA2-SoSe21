@@ -1,0 +1,56 @@
+.container {
+  display: none;
+  grid-template-columns: 1.9fr 0.6fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Field Player Event-Log";
+}
+
+.Field {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ".";
+  grid-area: Field;
+  width: fit-content;
+}
+
+.Player {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ".";
+  grid-area: Player;
+  display: none;
+  height: fit-content;
+}
+
+.Substitute {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ".";
+  grid-area: Event-Log;
+}
+
+#canvas {
+  position: relative;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+#spielfeld {
+  position: absolute;
+  z-index: 1;
+}

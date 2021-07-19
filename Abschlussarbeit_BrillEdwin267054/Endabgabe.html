@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Endabgabe - Edwin Brill</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="humans.js" defer></script>
+    <script src="player.js" defer></script>
+    <script src="referees.js" defer></script>
+    <script src="ball.js" defer></script>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="preGame">
+        <form id="preForm">
+            <div>
+                <label for="minAcc">Gib die minimal mögliche Abweichung an</label>
+                <input type="range" id="minAcc" name="minAcc" min="1" max="15" value="1">
+            </div>
+
+            <div>
+                <label for="maxAcc">Gib die maximal mögliche Abweichung an</label>
+                <input type="range" id="maxAcc" name="macAcc" min="1" max="15" value="15">
+            </div>
+
+            <div>
+                <label for="minSpeed">Gib die minimal mögliche Geschwindigkeit an</label>
+                <input type="range" id="minSpeed" name="minSpeed" min="1" max="5" value="1">
+            </div>
+
+            <div>
+                <label for="maxSpeed">Gib die maximal mögliche Geschwindigkeit an</label>
+                <input type="range" id="maxSpeed" name="maxSpeed" min="1" max="5" value="5">
+            </div>
+
+            <div>
+                <label for="jerseyColor1">Team1 Farbe </label>
+                <input type="color" id="jerseyColor1" name="jerseyColor1" value="#0000ff">
+            </div>
+
+            <div>
+                <label for="jerseyColor2">Team2 Farbe </label>
+                <input type="color" id="jerseyColor2" name="jerseyColor2" value="#ff0000">
+            </div>
+        </form>
+
+        <button id="startButton">Start</button>
+    </div>
+
+    <div class="container">
+        <div class="Player">
+            <p>Spielernummer <span id="nrInput"></span></p>
+            <p>Präzision <span id="accInput"></span></p>
+            <p>Geschwindigkeit <span id="speedInput"></span></p>
+            <label for="swap">Auswechselspieler</label>
+            <select id="swap" name="swap">
+                <option value="-1">Current Player</option>
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+            </select>
+        </div>
+
+        <div class="Substitute"></div>
+
+        <div class="Field" id="Field">
+            <canvas id="canvas" width="1050px" height="680px"></canvas>
+            <img id="spielfeld" src="../EndAbgabe/Spielfeld.png">
+        </div>
+      </div>
+</body>
